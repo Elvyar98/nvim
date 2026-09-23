@@ -8,8 +8,18 @@ return {
 	},
 	keys = function()
 		local keys = {
+
+			-- Remove the current file from the Harpoon list
 			{
-				"<space>H",
+				"<leader>hr",
+				function()
+					require("harpoon"):list():remove()
+				end,
+				desc = "Harpoon Remove current file",
+			},
+
+			{
+				"<space>ha",
 				function()
 					require("harpoon"):list():add()
 				end,
