@@ -1,7 +1,17 @@
 return {
+	-- Tell LazyVim to use catppuccin
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "catppuccin",
+		},
+	},
+
+	-- Install and configure catppuccin
 	{
 		"catppuccin/nvim",
-		lazy = true,
+		lazy = false, -- 👈 load at startup
+		priority = 1000, -- 👈 load before other plugins
 		name = "catppuccin",
 		opts = {
 			flavour = "mocha",
@@ -35,7 +45,6 @@ return {
 				noice = true,
 				notify = true,
 				snacks = true,
-				telescope = true,
 				treesitter_context = true,
 				which_key = true,
 			},
