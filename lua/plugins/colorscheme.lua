@@ -4,6 +4,7 @@ return {
 		lazy = true,
 		name = "catppuccin",
 		opts = {
+			flavour = "mocha",
 			lsp_styles = {
 				underlines = {
 					errors = { "undercurl" },

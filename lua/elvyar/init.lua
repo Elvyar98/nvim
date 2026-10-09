@@ -1,2 +1,3 @@
 require("elvyar.remap")
-print("Hej från Elvyar")
+require("elvyar.set")
+require("elvyar.lazy")
