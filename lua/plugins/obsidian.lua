@@ -69,8 +69,8 @@ return {
 	opts = {
 		workspaces = {
 			{ name = "elvis", path = VAULT },
-			ui = { enable = false },
 		},
+		ui = { enable = false },
 		templates = {
 			folder = TEMPLATES_DIR,
 			date_format = "%Y-%m-%d",
