@@ -69,6 +69,7 @@ return {
 	opts = {
 		workspaces = {
 			{ name = "elvis", path = VAULT },
+			ui = { enable = false },
 		},
 		templates = {
 			folder = TEMPLATES_DIR,
